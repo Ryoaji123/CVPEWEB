@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak | Ryo Ajisaputra</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script>document.documentElement.classList.add('js');</script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-atas" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="10" fill="#fff"/><text x="20" y="27.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="19" fill="#1a49c4">R</text></svg>
+          Ryo Ajisaputra
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Saya</a></li>
+            <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+            <li class="nav-item"><a class="nav-link" href="keahlian.html">Keahlian</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyek.html">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="foto.html">Foto</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1 d-flex flex-column">
+    <header class="banner">
+      <div class="container reveal">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Kontak</li>
+        </ol></nav>
+        <h1>Kontak <span aria-hidden="true">💬</span></h1>
+        <p class="mb-0 fs-5">Mau tanya, diskusi, atau sekadar menyapa? Hubungi saya di sini.</p>
+      </div>
+    </header>
+
+    <section class="bagian bg-abu">
+      <div class="container"><div class="row g-5 align-items-center">
+        <div class="col-lg-6 reveal">
+          <h2 class="mb-4">Yuk ngobrol bareng!</h2>
+          <a href="mailto:saputraryo505@gmail.com" class="email">saputraryo505@gmail.com</a>
+          <div class="d-flex flex-wrap gap-3 mt-5">
+            <a href="https://www.linkedin.com/in/ryo-ajisaputra-aa95b7444/" class="btn btn-nb btn-putih">LinkedIn</a>
+            <a href="https://github.com/Ryoaji123" class="btn btn-nb btn-putih">GitHub</a>
+            <a href="https://www.instagram.com/ajisaputraryo?obrf=MWI4eXk2bGY4eXNmYw==" class="btn btn-nb btn-putih">Instagram</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <form class="card kartu-nb form-kontak" action="https://formsubmit.co/saputraryo505@gmail.com" method="POST">
+            <div class="card-body p-4 p-lg-5">
+              <h2 class="h4 mb-4">Kirim pesan <span aria-hidden="true">✉️</span></h2>
+              <input type="hidden" name="_subject" value="Pesan baru dari website profil">
+              <input type="hidden" name="_template" value="table">
+              
+              <!--<input type="hidden" name="_next" value="https://alamat-website/kontak.html"> -->
+              <input type="text" name="_honey" class="d-none" tabindex="-1" autocomplete="off">
+              <div class="mb-3">
+                <label for="f-nama" class="form-label fw-semibold">Nama</label>
+                <input type="text" class="form-control" id="f-nama" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="f-email" class="form-label fw-semibold">Email kamu</label>
+                <input type="email" class="form-control" id="f-email" name="email" required>
+              </div>
+              <div class="mb-4">
+                <label for="f-pesan" class="form-label fw-semibold">Pesan</label>
+                <textarea class="form-control" id="f-pesan" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-nb btn-biru w-100">Kirim Pesan</button>
+            </div>
+          </form>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="py-4 text-center text-white-50">
+    <div class="container">
+      <p class="d-flex flex-wrap justify-content-center gap-3">
+        <a class="link-light text-decoration-none" href="index.html">Beranda</a>
+        <a class="link-light text-decoration-none" href="tentang.html">Tentang Saya</a>
+        <a class="link-light text-decoration-none" href="pendidikan.html">Pendidikan</a>
+        <a class="link-light text-decoration-none" href="keahlian.html">Keahlian</a>
+        <a class="link-light text-decoration-none" href="proyek.html">Proyek</a>
+        <a class="link-light text-decoration-none" href="foto.html">Foto</a>
+        <a class="link-light text-decoration-none" href="kontak.html">Kontak</a>
+      </p>
+      <small>&copy; <span id="tahun">2026</span> Ryo Ajisaputra. Seluruh hak cipta dilindungi.</small>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('tahun').textContent = new Date().getFullYear();
+    
+    var io = new IntersectionObserver(function (daftar) {
+      daftar.forEach(function (i) { if (i.isIntersecting) { i.target.classList.add('tampil'); io.unobserve(i.target); } });
+    }, { threshold: .15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    
+    window.onload = function () {
+      var gaya = getComputedStyle(document.documentElement), pesan = '';
+      if (!gaya.getPropertyValue('--bs-blue') || typeof bootstrap === 'undefined') pesan = 'Bootstrap belum termuat. Periksa nama file di folder css/ dan js/.';
+      else if (!gaya.getPropertyValue('--navy')) pesan = 'style.css belum termuat. Pastikan style.css satu folder dengan file HTML.';
+      if (pesan) document.body.insertAdjacentHTML('beforeend', '<div style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#b00020;color:#fff;padding:12px">' + pesan + '</div>');
+    };
+  </script>
+</body>
+</html>

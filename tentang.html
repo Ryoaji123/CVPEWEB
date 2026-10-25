@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang Saya | Ryo Ajisaputra</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script>document.documentElement.classList.add('js');</script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-atas" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="10" fill="#fff"/><text x="20" y="27.5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="19" fill="#1a49c4">R</text></svg>
+          Ryo Ajisaputra
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="tentang.html">Tentang Saya</a></li>
+            <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+            <li class="nav-item"><a class="nav-link" href="keahlian.html">Keahlian</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyek.html">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="foto.html">Foto</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1 d-flex flex-column">
+    <header class="banner">
+      <div class="container reveal">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tentang Saya</li>
+        </ol></nav>
+        <h1>Tentang Saya <span aria-hidden="true">✨</span></h1>
+        <p class="mb-0 fs-5">Kenalan lebih dekat: siapa saya, apa minat saya, dan ke mana saya menuju.</p>
+      </div>
+    </header>
+
+    <section class="bagian">
+      <div class="container"><div class="row g-4">
+        <div class="col-lg-7 reveal">
+          <div class="card kartu-nb h-100"><div class="card-body p-4 p-lg-5">
+            <h2 class="h4 mb-3">Biografi</h2>
+            <p class="fs-5">Saya Ryo Ajisaputra, mahasiswa Sistem Informasi yang berfokus pada analisis sistem dan pengembangan software. 
+              Dunia teknologi selalu menarik bagi saya karena memberikan ruang tanpa batas untuk berinovasi dan membangun sistem yang berguna bagi banyak orang.</p>
+            <p class="redup mb-0">Seiring bertambahnya pengalaman koding dan analisis alur bisnis, saya terus berupaya meningkatkan kemampuan teknis maupun analitis. 
+              Cita-cita saya adalah berkarier sebagai System Analyst dan Software Engineer profesional yang konsisten menciptakan perangkat lunak berkualitas.</p>
+          </div></div>
+        </div>
+        <div class="col-lg-5 d-flex flex-column gap-4 reveal">
+          <div class="card kartu-nb kartu-ice"><div class="card-body p-4">
+            <h2 class="h4 mb-3">Minat</h2>
+            <div class="d-flex flex-wrap gap-2"><span class="chip">Frontend Design</span><span class="chip chip-biru">System Analysis</span><span class="chip">UI/UX Designer</span><span class="chip">Business Intelligence</span></div>
+          </div></div>
+          <div class="card kartu-nb kartu-gelap"><div class="card-body p-4">
+            <h2 class="h4 mb-2 text-white">Tujuan Karier</h2>
+            <p class="mb-0">Menjadi seorang profesional di bidang Sistem Informasi yang mampu mengembangkan solusi teknologi serta menganalisis kebutuhan bisnis secara efektif. Berkomitmen untuk terus meningkatkan kemampuan teknis dan analitis dalam menciptakan sistem dan aplikasi yang inovatif, efisien, serta memberikan dampak positif bagi pengguna.</p>
+          </div></div>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="py-4 text-center text-white-50">
+    <div class="container">
+      <p class="d-flex flex-wrap justify-content-center gap-3">
+        <a class="link-light text-decoration-none" href="index.html">Beranda</a>
+        <a class="link-light text-decoration-none" href="tentang.html">Tentang Saya</a>
+        <a class="link-light text-decoration-none" href="pendidikan.html">Pendidikan</a>
+        <a class="link-light text-decoration-none" href="keahlian.html">Keahlian</a>
+        <a class="link-light text-decoration-none" href="proyek.html">Proyek</a>
+        <a class="link-light text-decoration-none" href="foto.html">Foto</a>
+        <a class="link-light text-decoration-none" href="kontak.html">Kontak</a>
+      </p>
+      <small>&copy; <span id="tahun">2026</span> Ryo Ajisaputra. Seluruh hak cipta dilindungi.</small>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('tahun').textContent = new Date().getFullYear();
+
+    var io = new IntersectionObserver(function (daftar) {
+      daftar.forEach(function (i) { if (i.isIntersecting) { i.target.classList.add('tampil'); io.unobserve(i.target); } });
+    }, { threshold: .15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    
+    window.onload = function () {
+      var gaya = getComputedStyle(document.documentElement), pesan = '';
+      if (!gaya.getPropertyValue('--bs-blue') || typeof bootstrap === 'undefined') pesan = 'Bootstrap belum termuat. Periksa nama file di folder css/ dan js/.';
+      else if (!gaya.getPropertyValue('--navy')) pesan = 'style.css belum termuat. Pastikan style.css satu folder dengan file HTML.';
+      if (pesan) document.body.insertAdjacentHTML('beforeend', '<div style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#b00020;color:#fff;padding:12px">' + pesan + '</div>');
+    };
+  </script>
+</body>
+</html>
